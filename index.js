@@ -3,9 +3,9 @@ const app = new Koa();
 
 const static = require('koa-static');
 
-// app.use(async ctx => {
-//     ctx.body = 'Helllo World'
-// })
+// 黑名单ip  禁止访问；
+const watcherIP = require('./watcherIP');
+app.use(watcherIP(app));
 // app.use( async (ctx, next) => {
 //     console.log('add');
 //    await next()
