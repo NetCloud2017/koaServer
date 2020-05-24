@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d3247"],{"5c03":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n  品牌管理\n")])},c=[],r={name:"TrademarkList"},u=r,l=t("2877"),s=Object(l["a"])(u,a,c,!1,null,null,null);e["default"]=s.exports}}]);

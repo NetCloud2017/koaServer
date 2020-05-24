@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0a4bf9"],{"0883":function(n,e,t){"use strict";t.r(e);var u=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n  SPU管理\n")])},a=[],c={name:"SpuList"},l=c,s=t("2877"),i=Object(s["a"])(l,u,a,!1,null,null,null);e["default"]=i.exports}}]);
