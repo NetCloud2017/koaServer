@@ -11,6 +11,12 @@ app.use(watcherIP(app));
 //    await next()
 // })
 
+app.use(async (ctx, next) => {
+    next()
+    if (ctx.path == '/login') {
+        ctx.body = '登录成功'
+    }
+})
 
 app.use(static(__dirname + '/staticPage'));
 
