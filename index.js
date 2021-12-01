@@ -1,6 +1,6 @@
 const Koa  = require('koa');
 const app = new Koa();
-
+const router = require('koa-router')();
 const static = require('koa-static');
 
 // 黑名单ip  禁止访问；
@@ -11,6 +11,11 @@ app.use(watcherIP(app));
 //    await next()
 // })
 
+router.post('/update', (ctx) => {
+    console.log('123');
+    ctx.body = '更新成功了'
+})
+app.use(router.routes())
 app.use(async (ctx, next) => {
     next()
     if (ctx.path == '/login') {
